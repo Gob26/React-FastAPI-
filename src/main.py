@@ -1,10 +1,9 @@
-import fastapi as FastAPI
+import fastapi
 
 from src.config import settings
 from src.http_client import CMCClient
 
-app = FastAPI()
-
+app = fastapi.FastAPI()
 
 cmc_client = CMCClient(
     base_url="https://pro-api.coinmarketcap.com",
